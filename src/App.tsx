@@ -2,6 +2,7 @@ import './App.css'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import 'reactflow/dist/style.css';
 import ControlledFlow from "./ControlledFlow.tsx";
+import UncontrolledFlow from "./UncontrolledFlow.tsx";
 
 export const initialNodes = [
   {
@@ -38,7 +39,7 @@ const App = () => {
       </nav>
       <Routes>
         <Route path="/controlled-flow" element={<ControlledFlow />} />
-        <Route path="/uncontrolled-flow" element={<div> Uncontrolled flow</div>} />
+        <Route path="/uncontrolled-flow" element={<UncontrolledFlow />} />
       </Routes>
     </BrowserRouter>
   );

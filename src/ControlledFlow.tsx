@@ -16,6 +16,7 @@ const ControlledFlow = () => {
         y: Math.random() * 500,
       },
     };
+
     setNodes((nds) => nds.concat(newNode));
   };
 
